@@ -13,19 +13,26 @@ a {
 header{
     display: flex;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 12px 50px;
     height: 70px;
+    align-items: center;
 }
 .logo{
-    flex:1;
+    flex: 1;
 }
 .menu{
     flex: 3;
     display: flex;
 }
-.menu > li {
+.menu > li{
     padding: 0 12px;
 }
-.others{
+.others {
     flex: 1;
+    display: flex;
 }
+.others > li{
+    padding: 0 12px;
+}
+
+
