@@ -11,10 +11,17 @@ a {
     text-decoration: none;
     color: #000;
 }
+.wrapper {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 header {
     display: flex;
     justify-content: space-between;
-    padding: 12px 50px;
+    padding: 0px 50px;
     height: 70px;
     align-items: center;
     position: fixed;
@@ -27,8 +34,22 @@ header {
 header:hover {
     background: rgba(255, 255, 255, 1);
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
 .logo {
+    height: 100%;
     flex: 1;
+    overflow: hidden;
+    padding-left: 12px;
+}
+.logo img {
+    height: 100%; /* Để kích thước ảnh giống với chiều cao của .logo */
+    max-height: 100%;
+    max-width: 100%; /* Để đảm bảo ảnh không vượt quá chiều rộng của .logo */
+    transform: scale(1.5);
+    
 }
 .menu{
     flex: 3;
@@ -186,4 +207,30 @@ footer {
 }
 
 /*.......................Category..........................*/
-
+.category {
+    padding: 100px 0 0;
+}
+.category-top {
+    margin-bottom: 50px;
+}
+.category-top p {
+    font-family: var(--main-text-font);
+    margin: 0 12px;
+    font-size: 12px;
+}
+.category-left {
+    width: 20%;
+}
+.category-right {
+    width: 80%;
+}
+.category-right-top-item:first-child {
+    flex: 2;
+    font-size: 16px;
+    font-family: var(--main-text-font);
+    font-weight: bold;
+}
+.category-right-top-item {
+    flex: 1;
+    padding: 0 12px;
+}
