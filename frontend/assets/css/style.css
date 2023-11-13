@@ -12,7 +12,7 @@ a {
     color: #000;
 }
 .wrapper {
-    width: 88%;
+    width: 94.5%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -50,6 +50,9 @@ header:hover {
     max-width: 100%; /* Để đảm bảo ảnh không vượt quá chiều rộng của .logo */
     transform: scale(1.5);
     
+}
+.info a {
+    color: red;
 }
 .menu{
     flex: 3;
@@ -109,10 +112,10 @@ header:hover {
     right: 10px;
 }
 /*.......................Slider..........................*/
-#Slider {
-    padding-bottom: 30px;
-    border-bottom: 2px solid #000;
+.Slider {
+    padding-bottom: 20px;
     overflow: hidden;
+    width: 100vw;
 }
 .aspect-ratio-169 {
     display: block;
@@ -251,4 +254,56 @@ footer {
     background-color: #fff;
     border: 1px solid #dddddd;
     cursor: pointer;
+}
+.category-right-content {
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.category-right-content-item {
+    width: calc(25% - 12px);
+    text-align: center;
+    padding: 12px 0;
+}
+.category-right-content-item h1 {
+    font-size: 11px;
+    font-family: var(--main-text-font);
+    margin-top: 6px;
+    color: #333333;
+}
+.category-right-content-item img {
+    width: 100%;
+}
+.category-right-content-item p {
+    font-size: 12px;
+}
+.category-right-bottom {
+    justify-content: space-between;
+    margin: 30px 0 20px;
+    width: 100%;
+}
+.category-right-bottom p {
+    font-family: var(--main-text-font);
+    font-size: 11px;
+}
+.category-left ul li {
+    padding: 12px 0;
+}
+.category-left ul li>a {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--main-text-font);
+}
+.category-left ul li ul li {
+    padding-left: 10px;
+}
+.category-left-li ul{
+    display: none;
+}
+.category-left-li.block ul {
+    display: block;
+}
+.category-left ul li ul li a{
+    color: #333;
+    font-size: 14px;
 }
